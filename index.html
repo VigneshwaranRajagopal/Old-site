@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title
+      data-en="M.M. Brothers Rice & Egg - Musiri Trichy"
+      data-ta="ம.ம். சகோதரர்கள் அரிசி & முட்டை - முசிறி திருச்சி"
+    >
+      MM Brothers Musiri
+    </title>
+    <meta
+      name="description"
+      content="Fresh rice varieties & country eggs from Musiri Main Market, Trichy. Seeraga Samba, Ponni, Country Eggs daily supply."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          🍚🥚
+          <span data-en="MM Brothers" data-ta="ம.ம். சகோதரர்கள்"
+            >MM Brothers</span
+          >
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" data-en="Home" data-ta="முகப்பு">Home</a></li>
+          <li>
+            <a href="#products" data-en="Products" data-ta="பொருட்கள்"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a href="about.html" data-en="About" data-ta="பற்றி">About</a>
+          </li>
+          <li>
+            <a href="contact.html" data-en="Contact" data-ta="தொடர்பு"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="lang-switcher">
+          <button id="lang-btn" data-en="🇬🇧 English" data-ta="🇮🇳 தமிழ்">
+            🇬🇧 English
+          </button>
+        </div>
+        <div class="hamburger">☰</div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="slider">
+        <div class="slide active">
+          <img
+            src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            alt="Rice"
+          />
+          <div class="slide-content">
+            <h1
+              data-en="Fresh Rice from Musiri Farms"
+              data-ta="முசிறி விவசாயிகளிடமிருந்து புதிய அரிசி"
+            >
+              Fresh Musiri Rice
+            </h1>
+            <p data-en="Seeraga Samba ₹68/kg" data-ta="சீரக சம்பா ₹68/கிலோ">
+              ₹68/kg
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1603048297194-9bef1f845cf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            alt="Eggs"
+          />
+          <div class="slide-content">
+            <h1
+              data-en="Country Eggs ₹11/dozen"
+              data-ta="நாட்டு முட்டை ₹11/டஜன்"
+            >
+              Country Eggs
+            </h1>
+            <p data-en="Fresh daily supply" data-ta="தினசரி புதிய சப்ளை">
+              Daily Fresh
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <span class="nav-dot active" onclick="currentSlide(1)"></span>
+        <span class="nav-dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="container">
+        <h2 data-en="Our Products" data-ta="எங்கள் பொருட்கள்">Products</h2>
+        <div class="filters">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            data-en="All"
+            data-ta="அனைத்தும்"
+          >
+            All
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="rice"
+            data-en="Rice"
+            data-ta="அரிசி"
+          >
+            Rice
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="eggs"
+            data-en="Eggs"
+            data-ta="முட்டை"
+          >
+            Eggs
+          </button>
+          <input
+            type="text"
+            id="search"
+            placeholder="data-en='Search products' data-ta='பொருட்களைத் தேடவும்'"
+            class="search"
+          />
+        </div>
+        <div class="product-grid" id="product-grid">
+          <!-- Products loaded by JS -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p
+          data-en="© 2025 MM Brothers Musiri, Trichy. GPS: 10.9622025, 78.4491605"
+          data-ta="© 2025 ம.ம். சகோதரர்கள் முசிறி, திருச்சி"
+        >
+          © 2025 MM Brothers
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

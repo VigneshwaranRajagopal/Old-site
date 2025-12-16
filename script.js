@@ -94,7 +94,7 @@ function renderProducts(productsToShow = products) {
             <div class="product-info">
                 <h3>${product.name[currentLang]}</h3>
                 <div class="price">${product.price}</div>
-                <a href="https://wa.me/919843054321?text=${encodeURIComponent(
+                <a href="https://wa.me/917667424736?text=${encodeURIComponent(
                   `${product.name[currentLang]} - ${product.price}`
                 )}" class="btn-order" target="_blank">
                     ${currentLang === "en" ? "Order Now" : "இப்போது ஆர்டர்"}
@@ -165,3 +165,4 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       .scrollIntoView({ behavior: "smooth" });
   });
 });
+
